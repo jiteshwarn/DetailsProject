@@ -511,7 +511,7 @@ var TestClass = /** @class */ (function () {
 var ProductService = /** @class */ (function () {
     function ProductService(http) {
         this.http = http;
-        this._productUrl = 'http://www.mocky.io/v2/5ca5ee5a3300008c532eaa6e';
+        this._productUrl = 'https://www.mocky.io/v2/5ca5ee5a3300008c532eaa6e';
     }
     ProductService.prototype.getProducts = function () {
         return this.http.get(this._productUrl);
