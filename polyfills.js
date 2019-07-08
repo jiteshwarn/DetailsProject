@@ -5772,7 +5772,7 @@ __webpack_require__.r(__webpack_exports__);
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! C:\Users\jnishad\Downloads\javascript-kyle\angularjs6Practise\my-dream-app\src\polyfills.ts */"./src/polyfills.ts");
+module.exports = __webpack_require__(/*! C:\Users\nisjit01\Documents\Work\personal\Details_project_orignational\src\polyfills.ts */"./src/polyfills.ts");
 
 
 /***/ })

@@ -23,14 +23,61 @@ webpackEmptyAsyncContext.id = "./src/$$_lazy_route_resource lazy recursive";
 
 /***/ }),
 
-/***/ "./src/app/app.component.css":
-/*!***********************************!*\
-  !*** ./src/app/app.component.css ***!
-  \***********************************/
+/***/ "./src/app/HomeComponent/home.component.css":
+/*!**************************************************!*\
+  !*** ./src/app/HomeComponent/home.component.css ***!
+  \**************************************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "ul li {\r\n    margin: 10px;\r\n}"
+module.exports = ""
+
+/***/ }),
+
+/***/ "./src/app/HomeComponent/home.component.html":
+/*!***************************************************!*\
+  !*** ./src/app/HomeComponent/home.component.html ***!
+  \***************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "\t        <!--================Home Banner Area =================-->\r\n\t\t\t<section class=\"home_banner_area\">\r\n                    <div class=\"container box_1620\">\r\n                        <div class=\"banner_inner d-flex align-items-center\">\r\n                         <div class=\"banner_content\">\r\n                             <div class=\"media\">\r\n                                 <div class=\"d-flex\">\r\n                                     <img src=\"https://avatars2.githubusercontent.com/u/16861849?s=400&u=268b64c2fb6d62ba8b0d7a9b63d078eb900a7297&v=4\" alt=\"\">\r\n                                 </div>\r\n                                 <div class=\"media-body\">\r\n                                     <div class=\"personal_text\">\r\n                                         <h6>Hello Everybody, i am</h6>\r\n                                         <h3>Jiteshwar Nishad</h3>\r\n                                         <h4>Senior UI Developer</h4>\r\n                                         <p>I'm a Tech Savy living in Bangalore, India. I have 6 years of experience in web and mobile based websites. I'm currently employed at Apttus where I develop HTML, CSS and JS for consumer facing applications.</p>\r\n                                         <ul class=\"list basic_info\">\r\n                                             <li><a href=\"#\"><i class=\"lnr lnr-calendar-full\"></i> 28th April, 1989</a></li>\r\n                                             <li><a href=\"#\"><i class=\"lnr lnr-phone-handset\"></i> +91 9590325564</a></li>\r\n                                             <li><a href=\"#\"><i class=\"lnr lnr-envelope\"></i> jiteshnishad1989@gmail.com</a></li>\r\n                                             <li><a href=\"#\"><i class=\"lnr lnr-home\"></i> Bangalore India</a></li>\r\n                                         </ul>\r\n                                         <ul class=\"list personal_social\">\r\n                                             <li><a href=\"#\"><i class=\"fa fa-facebook\"></i></a></li>\r\n                                             <li><a href=\"#\"><i class=\"fa fa-twitter\"></i></a></li>\r\n                                             <li><a href=\"#\"><i class=\"fa fa-linkedin\"></i></a></li>\r\n                                         </ul>\r\n                                     </div>\r\n                                 </div>\r\n                             </div>\r\n                         </div>\r\n                     </div>\r\n                 </div>\r\n                 </section>\r\n             <!--================End Home Banner Area =================-->"
+
+/***/ }),
+
+/***/ "./src/app/HomeComponent/home.component.ts":
+/*!*************************************************!*\
+  !*** ./src/app/HomeComponent/home.component.ts ***!
+  \*************************************************/
+/*! exports provided: HomeComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "HomeComponent", function() { return HomeComponent; });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+
+var HomeComponent = /** @class */ (function () {
+    function HomeComponent() {
+        this.welcomeMsg = "Hey...";
+    }
+    HomeComponent = __decorate([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
+            selector: 'wm-component',
+            template: __webpack_require__(/*! ./home.component.html */ "./src/app/HomeComponent/home.component.html"),
+            styles: [__webpack_require__(/*! ./home.component.css */ "./src/app/HomeComponent/home.component.css")]
+        })
+    ], HomeComponent);
+    return HomeComponent;
+}());
+
+
 
 /***/ }),
 
@@ -41,7 +88,18 @@ module.exports = "ul li {\r\n    margin: 10px;\r\n}"
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<ul class=\"nav nav-tabs\">\n  <li class=\"active\"><a routerLink=\"/welcome\" routerLinkActive=\"active\">Welcome</a></li>\n  <li><a routerLink=\"/product\">Product</a></li>\n  <li><a routerLink=\"product-detail\">Details</a></li>\n  <li><a routerLink=\"simple-component\">Simple Component</a></li>\n  <li><a routerLink=\"parent-component\">Parent Child Commnuication</a></li> \n  <li><a routerLink=\"forms\">FOrms</a></li>\n</ul>\n<router-outlet></router-outlet>"
+module.exports = "\r\n<!--================Header Menu Area =================-->\r\n<header class=\"header_area\">\r\n  <div class=\"main_menu\">\r\n    <nav class=\"navbar navbar-expand-lg navbar-light\">\r\n      <div class=\"container box_1620\">\r\n        <!-- Brand and toggle get grouped for better mobile display -->\r\n        <a class=\"navbar-brand logo_h\" href=\"index.html\"><img src=\"img/logo.png\" alt=\"\"></a>\r\n        <button class=\"navbar-toggler\" type=\"button\" data-toggle=\"collapse\" data-target=\"#navbarSupportedContent\"\r\n          aria-controls=\"navbarSupportedContent\" aria-expanded=\"false\" aria-label=\"Toggle navigation\">\r\n          <span class=\"icon-bar\"></span>\r\n          <span class=\"icon-bar\"></span>\r\n          <span class=\"icon-bar\"></span>\r\n        </button>\r\n        <!-- Collect the nav links, forms, and other content for toggling -->\r\n        <div class=\"collapse navbar-collapse offset\" id=\"navbarSupportedContent\">\r\n          <ul class=\"nav navbar-nav menu_nav ml-auto\">\r\n            <li class=\"nav-item active\">\r\n              <a class=\"nav-link\" routerLink=\"/home\" routerLinkActive=\"active\">Home</a>\r\n            </li>\r\n            <li class=\"nav-item\"><a class=\"nav-link\" href=\"about-us.html\">About</a></li>\r\n            <li class=\"nav-item\"><a class=\"nav-link\" href=\"services.html\">Services</a></li>\r\n            <li class=\"nav-item submenu dropdown\">\r\n              <a href=\"#\" class=\"nav-link dropdown-toggle\" data-toggle=\"dropdown\" role=\"button\" aria-haspopup=\"true\"\r\n                aria-expanded=\"false\">Pages</a>\r\n              <ul class=\"dropdown-menu\">\r\n                <li class=\"nav-item\"><a class=\"nav-link\" href=\"portfolio.html\">Portfolio</a></li>\r\n                <li class=\"nav-item\"><a class=\"nav-link\" href=\"elements.html\">Elements</a></li>\r\n              </ul>\r\n            </li>\r\n            <li class=\"nav-item submenu dropdown\">\r\n              <a href=\"#\" class=\"nav-link dropdown-toggle\" data-toggle=\"dropdown\" role=\"button\" aria-haspopup=\"true\"\r\n                aria-expanded=\"false\">Blog</a>\r\n              <ul class=\"dropdown-menu\">\r\n                <li class=\"nav-item\"><a class=\"nav-link\" href=\"blog.html\">Blog</a></li>\r\n                <li class=\"nav-item\"><a class=\"nav-link\" href=\"single-blog.html\">Blog Details</a>\r\n                </li>\r\n              </ul>\r\n            </li>\r\n            <!-- <li class=\"nav-item\"><a class=\"nav-link\" href=\"contact.html\">Contact</a></li>\r\n            <li class=\"nav-item\"><a class=\"nav-link\" routerLink=\"/welcome\">Welcome</a></li>\r\n            <li class=\"nav-item\"><a class=\"nav-link\" routerLink=\"/product\">Product</a></li>\r\n            <li class=\"nav-item\"><a class=\"nav-link\" routerLink=\"product-detail\">Details</a></li>\r\n            <li class=\"nav-item\"><a class=\"nav-link\" routerLink=\"simple-component\">Simple Component</a></li>\r\n            <li class=\"nav-item\" ><a class=\"nav-link\" routerLink=\"parent-component\">Parent Child Commnuication</a></li>\r\n            <li class=\"nav-item\"><a class=\"nav-link\" routerLink=\"forms\">Forms</a></li> -->\r\n          </ul>\r\n        </div>\r\n      </div>\r\n    </nav>\r\n  </div>\r\n</header>\r\n<!--================Header Menu Area =================-->\r\n<router-outlet></router-outlet>"
+
+/***/ }),
+
+/***/ "./src/app/app.component.scss":
+/*!************************************!*\
+  !*** ./src/app/app.component.scss ***!
+  \************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "ul li {\n  margin: 10px; }\n"
 
 /***/ }),
 
@@ -71,7 +129,7 @@ var AppComponent = /** @class */ (function () {
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
             selector: 'app-root',
             template: __webpack_require__(/*! ./app.component.html */ "./src/app/app.component.html"),
-            styles: [__webpack_require__(/*! ./app.component.css */ "./src/app/app.component.css")]
+            styles: [__webpack_require__(/*! ./app.component.scss */ "./src/app/app.component.scss")]
         })
     ], AppComponent);
     return AppComponent;
@@ -105,7 +163,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _parent_component_parent_component_component__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./parent-component/parent-component.component */ "./src/app/parent-component/parent-component.component.ts");
 /* harmony import */ var _child_component_child_component_component__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./child-component/child-component.component */ "./src/app/child-component/child-component.component.ts");
 /* harmony import */ var _testjavascript_testjavascript_component__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ./testjavascript/testjavascript.component */ "./src/app/testjavascript/testjavascript.component.ts");
-/* harmony import */ var _angular_platform_browser_animations__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! @angular/platform-browser/animations */ "./node_modules/@angular/platform-browser/fesm5/animations.js");
+/* harmony import */ var _HomeComponent_home_component__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ./HomeComponent/home.component */ "./src/app/HomeComponent/home.component.ts");
+/* harmony import */ var _angular_platform_browser_animations__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! @angular/platform-browser/animations */ "./node_modules/@angular/platform-browser/fesm5/animations.js");
 var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -127,16 +186,19 @@ var __decorate = (undefined && undefined.__decorate) || function (decorators, ta
 
 
 
+// new website
+
 // import { FormsComponent } from './forms/forms.component';
 
 var appRoutes = [
+    { path: 'home', component: _HomeComponent_home_component__WEBPACK_IMPORTED_MODULE_14__["HomeComponent"] },
     { path: 'product', component: _products_product_component__WEBPACK_IMPORTED_MODULE_5__["ProductComponent"] },
     { path: 'welcome', component: _welcomeComponent_welcome_component__WEBPACK_IMPORTED_MODULE_6__["WelcomeComponent"] },
     { path: 'product-detail', component: _productDetails_product_details_component__WEBPACK_IMPORTED_MODULE_7__["ProductDetailsComponent"] },
     { path: 'simple-component', component: _simpleComponent_app_simple_component__WEBPACK_IMPORTED_MODULE_10__["SimpleComponent"] },
     { path: 'parent-component', component: _parent_component_parent_component_component__WEBPACK_IMPORTED_MODULE_11__["ParentComponentComponent"] },
     // {path:'forms',component:FormsComponent},
-    { path: '**', component: _welcomeComponent_welcome_component__WEBPACK_IMPORTED_MODULE_6__["WelcomeComponent"] }
+    { path: '**', component: _HomeComponent_home_component__WEBPACK_IMPORTED_MODULE_14__["HomeComponent"] }
 ];
 var AppModule = /** @class */ (function () {
     function AppModule() {
@@ -152,13 +214,15 @@ var AppModule = /** @class */ (function () {
                 _parent_component_parent_component_component__WEBPACK_IMPORTED_MODULE_11__["ParentComponentComponent"],
                 _child_component_child_component_component__WEBPACK_IMPORTED_MODULE_12__["ChildComponentComponent"],
                 _testjavascript_testjavascript_component__WEBPACK_IMPORTED_MODULE_13__["TestjavascriptComponent"],
+                _HomeComponent_home_component__WEBPACK_IMPORTED_MODULE_14__["HomeComponent"]
+                // FormsComponent
             ],
             imports: [
                 _angular_platform_browser__WEBPACK_IMPORTED_MODULE_0__["BrowserModule"],
                 _angular_router__WEBPACK_IMPORTED_MODULE_2__["RouterModule"].forRoot(appRoutes, { enableTracing: true }),
                 _angular_common_http__WEBPACK_IMPORTED_MODULE_8__["HttpClientModule"],
                 _angular_forms__WEBPACK_IMPORTED_MODULE_3__["FormsModule"],
-                _angular_platform_browser_animations__WEBPACK_IMPORTED_MODULE_14__["BrowserAnimationsModule"],
+                _angular_platform_browser_animations__WEBPACK_IMPORTED_MODULE_15__["BrowserAnimationsModule"],
                 // DemoMaterialModule,
                 _angular_forms__WEBPACK_IMPORTED_MODULE_3__["ReactiveFormsModule"]
             ],
@@ -191,7 +255,7 @@ module.exports = ""
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<p>\n  child-component works!\n</p>\n<h3>{{cdata}}</h3>\n<h5>\n{{reciveFromParent}}\n</h5>\n\n<button (click)=\"emitChild()\">send data to parent</button>\n\n\n \n"
+module.exports = "<p>\r\n  child-component works!\r\n</p>\r\n<h3>{{cdata}}</h3>\r\n<h5>\r\n{{reciveFromParent}}\r\n</h5>\r\n\r\n<button (click)=\"emitChild()\">send data to parent</button>\r\n\r\n\r\n \r\n"
 
 /***/ }),
 
@@ -251,17 +315,6 @@ var ChildComponentComponent = /** @class */ (function () {
 
 /***/ }),
 
-/***/ "./src/app/parent-component/parent-component.component.css":
-/*!*****************************************************************!*\
-  !*** ./src/app/parent-component/parent-component.component.css ***!
-  \*****************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-module.exports = ""
-
-/***/ }),
-
 /***/ "./src/app/parent-component/parent-component.component.html":
 /*!******************************************************************!*\
   !*** ./src/app/parent-component/parent-component.component.html ***!
@@ -269,7 +322,18 @@ module.exports = ""
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "**********************PARENT COMPONENT STARTS\n*********************************************\n<p>\n  parent-component works!\n</p>\n<h1>\n    {{pdata}}\n</h1>\n{{receiveValueFromChild}}\n<br>\n\n***************************************\n\nCHILD COMPONENT STARTS\n*********************************************\n<app-child-component [reciveFromParent]=\"pdata\" (msgEvent)=\"recieveValueChild($event)\"></app-child-component>"
+module.exports = "**********************PARENT COMPONENT STARTS\r\n*********************************************\r\n<p>\r\n  parent-component works!\r\n</p>\r\n<h1>\r\n    {{pdata}}\r\n</h1>\r\n{{receiveValueFromChild}}\r\n<br>\r\n\r\n***************************************\r\n\r\nCHILD COMPONENT STARTS\r\n*********************************************\r\n<app-child-component [reciveFromParent]=\"pdata\" (msgEvent)=\"recieveValueChild($event)\"></app-child-component>"
+
+/***/ }),
+
+/***/ "./src/app/parent-component/parent-component.component.scss":
+/*!******************************************************************!*\
+  !*** ./src/app/parent-component/parent-component.component.scss ***!
+  \******************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = ""
 
 /***/ }),
 
@@ -307,7 +371,7 @@ var ParentComponentComponent = /** @class */ (function () {
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
             selector: 'app-parent-component',
             template: __webpack_require__(/*! ./parent-component.component.html */ "./src/app/parent-component/parent-component.component.html"),
-            styles: [__webpack_require__(/*! ./parent-component.component.css */ "./src/app/parent-component/parent-component.component.css")]
+            styles: [__webpack_require__(/*! ./parent-component.component.scss */ "./src/app/parent-component/parent-component.component.scss")]
         }),
         __metadata("design:paramtypes", [])
     ], ParentComponentComponent);
@@ -607,7 +671,7 @@ module.exports = ""
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<p>\n  testjavascript works!\n</p>\n"
+module.exports = "<p>\r\n  testjavascript works!\r\n</p>\r\n"
 
 /***/ }),
 
@@ -682,7 +746,7 @@ module.exports = ""
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<img class=\"irc_mi\" src=\"http://lifecounselor.net/wp-content/uploads/2012/08/Fotolia_9058674_XS.jpg\" onload=\"typeof google==='object'&amp;&amp;google.aft&amp;&amp;google.aft(this)\" alt=\"Related image\" width=\"346\" height=\"346\" style=\"margin-top: 4px;\" data-iml=\"1554138344536\">\r\n"
+module.exports = "\t        <!--================Home Banner Area =================-->\r\n\t\t\t<section class=\"home_banner_area\">\r\n                    <div class=\"container box_1620\">\r\n                        <div class=\"banner_inner d-flex align-items-center\">\r\n                         <div class=\"banner_content\">\r\n                             <div class=\"media\">\r\n                                 <div class=\"d-flex\">\r\n                                     <img src=\"https://avatars2.githubusercontent.com/u/16861849?s=400&u=268b64c2fb6d62ba8b0d7a9b63d078eb900a7297&v=4\" alt=\"\">\r\n                                 </div>\r\n                                 <div class=\"media-body\">\r\n                                     <div class=\"personal_text\">\r\n                                         <h6>Hello Everybody, i am</h6>\r\n                                         <h3>Jiteshwar Nishad</h3>\r\n                                         <h4>Senior UI Developer</h4>\r\n                                         <p>I'm a Tech Savy living in Bangalore, India. I have 6 years of experience in web and mobile based websites. I'm currently employed at Apttus where I develop HTML, CSS and JS for consumer facing applications.</p>\r\n                                         <ul class=\"list basic_info\">\r\n                                             <li><a href=\"#\"><i class=\"lnr lnr-calendar-full\"></i> 28th April, 1989</a></li>\r\n                                             <li><a href=\"#\"><i class=\"lnr lnr-phone-handset\"></i> +91 9590325564</a></li>\r\n                                             <li><a href=\"#\"><i class=\"lnr lnr-envelope\"></i> jiteshnishad1989@gmail.com</a></li>\r\n                                             <li><a href=\"#\"><i class=\"lnr lnr-home\"></i> Bangalore India</a></li>\r\n                                         </ul>\r\n                                         <ul class=\"list personal_social\">\r\n                                             <li><a href=\"#\"><i class=\"fa fa-facebook\"></i></a></li>\r\n                                             <li><a href=\"#\"><i class=\"fa fa-twitter\"></i></a></li>\r\n                                             <li><a href=\"#\"><i class=\"fa fa-linkedin\"></i></a></li>\r\n                                         </ul>\r\n                                     </div>\r\n                                 </div>\r\n                             </div>\r\n                         </div>\r\n                     </div>\r\n                 </div>\r\n                 </section>\r\n             <!--================End Home Banner Area =================-->"
 
 /***/ }),
 
@@ -785,7 +849,7 @@ Object(_angular_platform_browser_dynamic__WEBPACK_IMPORTED_MODULE_2__["platformB
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! C:\Users\jnishad\Downloads\javascript-kyle\angularjs6Practise\my-dream-app\src\main.ts */"./src/main.ts");
+module.exports = __webpack_require__(/*! C:\Users\nisjit01\Documents\Work\personal\Details_project_orignational\src\main.ts */"./src/main.ts");
 
 
 /***/ })
